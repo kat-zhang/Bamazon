@@ -35,6 +35,7 @@ function start() {
         console.log("            AVAILABLE FOR PURCHASE            ");
         console.log("----------------------------------------------");
         console.log("");
+        choose();
       }
       else {
         console.log("Goodbye")
@@ -42,22 +43,39 @@ function start() {
     });
 }
 
-// function showProducts () {
-//   connection.query("SELECT * FROM products", function (error, response){
-//     for (var i = 0;  i < response.length; i++) {
+function showProducts () {
+  connection.query("SELECT * FROM products", function (error, response){
+    for (var i = 0;  i < response.length; i++) {
     
-//       console.table ([ 
-//         {
-//           ITEM_ID: response[i].item_id,
-//           PRODUCT: response[i].product_name,
-//           DEPARTMENT: response[i].department_name,
-//           PRICE: response[i].price
+      console.table ([ 
+        {
+          ITEM_ID: response[i].item_id,
+          PRODUCT: response[i].product_name,
+          DEPARTMENT: response[i].department_name,
+          PRICE: response[i].price
 
-//         }
-//       ])
+        }
+      ])
 
-//     }
-//   })
-// }
+    }
+  })
+}
 
+function choose() {
+  inquirer
+    .prompt({
+      name: "chooseItem",
+      type: "list",
+      message: "Which item do you want to purchase?",
+      choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
 
+    })
+    .then(function (answer) {
+      if (answer.chooseItem == "1") {
+        console.log("akjdshlf")
+      }
+      else (
+        console.log('bfbsfdsf')
+      )
+    })
+}
