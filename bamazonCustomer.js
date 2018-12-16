@@ -31,7 +31,10 @@ function start() {
       // based on their answer, either call the bid or the post functions
       if (answer.startShopping === "YES") {
         showProducts();
-        // console.log("Hell yeah")
+        console.log("----------------------------------------------");
+        console.log("            AVAILABLE FOR PURCHASE            ");
+        console.log("----------------------------------------------");
+        console.log("");
       }
       else {
         console.log("Goodbye")
@@ -39,62 +42,22 @@ function start() {
     });
 }
 
-function showProducts() {
-  connection.query("SELECT * FROM products", function (error, response){
-    for (var i = 0; i < response.length; i++) {
-      console.log("ITEM ID", response[i].item_id + "|" + "PRODUCT", response[i].product_name + "|" + "DEPARTMENT", response[i].department_name + "|" + "PRICE", response[i].price);
-    };
-  })
-}
-// function showProducts(){
-//   console.table ([
-//     {
-//       item_id:
-//       product:
-//       department:
-//       price:
+// function showProducts () {
+//   connection.query("SELECT * FROM products", function (error, response){
+//     for (var i = 0;  i < response.length; i++) {
+    
+//       console.table ([ 
+//         {
+//           ITEM_ID: response[i].item_id,
+//           PRODUCT: response[i].product_name,
+//           DEPARTMENT: response[i].department_name,
+//           PRICE: response[i].price
+
+//         }
+//       ])
+
 //     }
-//     {
-//       item_id:
-//       product:
-//       department:
-//       price:
-//     }
-//     {
-//       item_id:
-//       product:
-//       department:
-//       price:
-//     }
-//     {
-//       item_id:
-//       product:
-//       department:
-//       price:
-//     }
-//     {
-//       item_id:
-//       product:
-//       department:
-//       price:
-//     }
-//     {
-//       item_id:
-//       product:
-//       department:
-//       price:
-//     }
-//     {
-//       item_id:
-//       product:
-//       department:
-//       price:
-//     }
-//     {
-//       item_id:
-//       product:
-//       department:
-//       price:
-//     }
-//   ])
+//   })
 // }
+
+
