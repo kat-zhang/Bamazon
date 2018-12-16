@@ -28,8 +28,8 @@ function start() {
     })
     .then(function(answer) {
       // based on their answer, either call the bid or the post functions
-      if (answer.postOrBid === "YES") {
-        showProducts();
+      if (answer.startShopping === "YES") {
+        // showProducts();
         console.log("Hell yeah")
       }
       else {
@@ -38,6 +38,6 @@ function start() {
     });
 }
 
-function showProducts(){
+// function showProducts(){
   
-}
+// }
