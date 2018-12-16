@@ -5,7 +5,7 @@ var inquirer = require("inquirer");
 // create the connection information for the sql database
 var connection = mysql.createConnection({
   host: "localhost",
-  port: 3307,
+  port: 3306,
   user: "root",
   password: "root",
   database: "bamazon"
@@ -29,11 +29,15 @@ function start() {
     .then(function(answer) {
       // based on their answer, either call the bid or the post functions
       if (answer.postOrBid === "YES") {
-        // postAuction();
+        showProducts();
         console.log("Hell yeah")
       }
       else {
         console.log("Goodbye")
       }
     });
+}
+
+function showProducts(){
+  
 }
