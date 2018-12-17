@@ -1,4 +1,3 @@
-
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 const cTable = require("console.table");
@@ -77,5 +76,52 @@ function choose() {
       else (
         console.log('bfbsfdsf')
       )
+    })
+}
+
+function choose() {
+  inquirer
+    .prompt({
+      name: "chooseItem",
+      type: "list",
+      message: "Which item do you want to purchase?",
+      choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+
+    })
+    .then(function (answer) {
+      if (answer.chooseItem == "1") {
+        console.log("akjdshlf")
+      }
+    
+      else if (answer.chooseItem == "2") {
+        console.log('bfbsfdsf')
+      }
+      else if (answer.chooseItem == "2") {
+        console.log('cdsfsdfsd')
+         }
+      else if (answer.chooseItem == "3") {
+        console.log('dgrgsd')
+      }
+      else if (answer.chooseItem == "4") {
+        console.log('efghdh')
+         }
+      else if (answer.chooseItem == "5") {
+        console.log('fhghdf')
+      }
+      else if (answer.chooseItem == "6") {
+        console.log('gdfgf')
+         }
+      else if (answer.chooseItem == "7") {
+        console.log('hisdhf')
+      }
+      else if (answer.chooseItem == "8") {
+        console.log('isdfgb')
+         }
+       else if (answer.chooseItem == "9") {
+        console.log('jhsdfgsdfg')
+      }
+      else if (answer.chooseItem == "10") {
+        console.log('khfsdgfgdsf')
+         }        
     })
 }
