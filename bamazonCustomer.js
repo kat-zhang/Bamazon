@@ -90,38 +90,104 @@ function choose() {
     })
     .then(function (answer) {
       if (answer.chooseItem == "1") {
-        console.log("akjdshlf")
+        inquirer
+        .prompt ({
+          name: "quantity",
+          type: "input",
+          message: "How many units do you want to purchase?"
+
+        })
       }
     
       else if (answer.chooseItem == "2") {
-        console.log('bfbsfdsf')
+        inquirer
+        .prompt ({
+          name: "quantity",
+          type: "input",
+          message: "How many units do you want to purchase?"
+
+        })
       }
       else if (answer.chooseItem == "2") {
-        console.log('cdsfsdfsd')
+        inquirer
+        .prompt ({
+          name: "quantity",
+          type: "input",
+          message: "How many units do you want to purchase?"
+
+        })
          }
       else if (answer.chooseItem == "3") {
-        console.log('dgrgsd')
+        inquirer
+        .prompt ({
+          name: "quantity",
+          type: "input",
+          message: "How many units do you want to purchase?"
+
+        })
       }
       else if (answer.chooseItem == "4") {
-        console.log('efghdh')
+        inquirer
+        .prompt ({
+          name: "quantity",
+          type: "input",
+          message: "How many units do you want to purchase?"
+
+        })
          }
       else if (answer.chooseItem == "5") {
-        console.log('fhghdf')
+        inquirer
+        .prompt ({
+          name: "quantity",
+          type: "input",
+          message: "How many units do you want to purchase?"
+
+        })
       }
       else if (answer.chooseItem == "6") {
-        console.log('gdfgf')
+        inquirer
+        .prompt ({
+          name: "quantity",
+          type: "input",
+          message: "How many units do you want to purchase?"
+
+        })
          }
       else if (answer.chooseItem == "7") {
-        console.log('hisdhf')
+        inquirer
+        .prompt ({
+          name: "quantity",
+          type: "input",
+          message: "How many units do you want to purchase?"
+
+        })
       }
       else if (answer.chooseItem == "8") {
-        console.log('isdfgb')
+        inquirer
+        .prompt ({
+          name: "quantity",
+          type: "input",
+          message: "How many units do you want to purchase?"
+
+        })
          }
        else if (answer.chooseItem == "9") {
-        console.log('jhsdfgsdfg')
+        inquirer
+        .prompt ({
+          name: "quantity",
+          type: "input",
+          message: "How many units do you want to purchase?"
+
+        })
       }
       else if (answer.chooseItem == "10") {
-        console.log('khfsdgfgdsf')
+        inquirer
+        .prompt ({
+          name: "quantity",
+          type: "input",
+          message: "How many units do you want to purchase?"
+
+        })
          }        
     })
 }
