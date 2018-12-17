@@ -102,6 +102,7 @@ function choose() {
 // if answer.chooseQuantity > stock_quantity 
 // console.log ("Sorry, there are only X units in stock")
 // if answer.chooseQuantity <= stock_quantity 
+// calculate answer.chooseQuantity * price and give total
 
 // console.log ("Thank you for shopping at Bamazon")
 
