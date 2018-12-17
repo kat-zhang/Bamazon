@@ -6,6 +6,6 @@ This connection also allows the stock quantities to be updated as products are p
 
 # Demonstration
 
-![image1](images/step1.png)
-![image2](images/step2.png)
-![image2](images/step3.png)
+![image1](images/step1.PNG)
+![image2](images/step2.PNG)
+![image2](images/step3.PNG)
