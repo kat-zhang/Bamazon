@@ -60,134 +60,52 @@ function showProducts () {
   })
 }
 
+// function choose() {
+//   inquirer
+//     .prompt({
+//       name: "chooseItem",
+//       type: "list",
+//       message: "Which item do you want to purchase?",
+//       choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+
+//     })
+//     .then(function (answer) {
+//       if (answer.chooseItem == "1") {
+//         console.log("akjdshlf")
+//       }
+//       else (
+//         console.log('bfbsfdsf')
+//       )
+//     })
+// }
 function choose() {
   inquirer
-    .prompt({
-      name: "chooseItem",
-      type: "list",
-      message: "Which item do you want to purchase?",
-      choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    .prompt([
+      {
+        name: "chooseItem",
+        type: "list",
+        message: "Which item do you want to purchase?",
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+      },
+      {
+        name: "chooseQuantity",
+        type: "input",
+        message: "How many do you want to purchase?"
+       
 
-    })
-    .then(function (answer) {
-      if (answer.chooseItem == "1") {
-        console.log("akjdshlf")
       }
-      else (
-        console.log('bfbsfdsf')
-      )
-    })
+    ])
+   
 }
+// function quantity() {
+//   inquirer
+//     .prompt({
+//         name: "chooseQuantity",
+//         type: "input",
+//         message: "How many do you want to purchase?"
+       
 
-function choose() {
-  inquirer
-    .prompt({
-      name: "chooseItem",
-      type: "list",
-      message: "Which item do you want to purchase?",
-      choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+//       }
 
-    })
-    .then(function (answer) {
-      if (answer.chooseItem == "1") {
-        inquirer
-        .prompt ({
-          name: "quantity",
-          type: "input",
-          message: "How many units do you want to purchase?"
-
-        })
-      }
-    
-      else if (answer.chooseItem == "2") {
-        inquirer
-        .prompt ({
-          name: "quantity",
-          type: "input",
-          message: "How many units do you want to purchase?"
-
-        })
-      }
-      else if (answer.chooseItem == "2") {
-        inquirer
-        .prompt ({
-          name: "quantity",
-          type: "input",
-          message: "How many units do you want to purchase?"
-
-        })
-         }
-      else if (answer.chooseItem == "3") {
-        inquirer
-        .prompt ({
-          name: "quantity",
-          type: "input",
-          message: "How many units do you want to purchase?"
-
-        })
-      }
-      else if (answer.chooseItem == "4") {
-        inquirer
-        .prompt ({
-          name: "quantity",
-          type: "input",
-          message: "How many units do you want to purchase?"
-
-        })
-         }
-      else if (answer.chooseItem == "5") {
-        inquirer
-        .prompt ({
-          name: "quantity",
-          type: "input",
-          message: "How many units do you want to purchase?"
-
-        })
-      }
-      else if (answer.chooseItem == "6") {
-        inquirer
-        .prompt ({
-          name: "quantity",
-          type: "input",
-          message: "How many units do you want to purchase?"
-
-        })
-         }
-      else if (answer.chooseItem == "7") {
-        inquirer
-        .prompt ({
-          name: "quantity",
-          type: "input",
-          message: "How many units do you want to purchase?"
-
-        })
-      }
-      else if (answer.chooseItem == "8") {
-        inquirer
-        .prompt ({
-          name: "quantity",
-          type: "input",
-          message: "How many units do you want to purchase?"
-
-        })
-         }
-       else if (answer.chooseItem == "9") {
-        inquirer
-        .prompt ({
-          name: "quantity",
-          type: "input",
-          message: "How many units do you want to purchase?"
-
-        })
-      }
-      else if (answer.chooseItem == "10") {
-        inquirer
-        .prompt ({
-          name: "quantity",
-          type: "input",
-          message: "How many units do you want to purchase?"
-
-        })
-         }        
-    })
-}
+//     )
+// }
