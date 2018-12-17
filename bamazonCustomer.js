@@ -92,20 +92,26 @@ function choose() {
         type: "input",
         message: "How many do you want to purchase?"
        
-
       }
     ])
    
 }
-// function quantity() {
-//   inquirer
-//     .prompt({
-//         name: "chooseQuantity",
-//         type: "input",
-//         message: "How many do you want to purchase?"
-       
 
-//       }
+// pair answer.chooseItem to corresponding item_id
 
-//     )
-// }
+// if answer.chooseQuantity > stock_quantity 
+// console.log ("Sorry, there are only X units in stock")
+// if answer.chooseQuantity <= stock_quantity 
+
+// console.log ("Thank you for shopping at Bamazon")
+
+// make connection then SELECT FROM * products
+// UPDATE products SET ? WHERE ?
+// [
+//   { 
+//     stock_quantity: stock_quantity-answer.chooseQuantity
+//   },
+//   { 
+//     item_id: answer.chooseItem
+//   },
+// ]
